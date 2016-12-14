@@ -39,11 +39,9 @@
 								<tr>
 									<td class="content-block">
 										<table>
-												<tr><td>Servings</td><td>Dish</td></tr>
-											 <tr style="list-style: none">{{#items}}</tr>
-											<tr><td>this.qty</td><td>this.name</td></tr>
-											
-											 <tr style="list-style: none">{{/items}}</tr>
+											 {{#each items}
+												<tr><td>{{qty}}</td><td>{{name}}</td></tr>
+											 {{/each}}
  										</table>
 									</td>
 								</tr>
