@@ -38,11 +38,13 @@
 								</tr>
 								<tr>
 									<td class="content-block">
-										<ul>
-											 <li style="list-style: none">{{#items}}</li>
-													 <li>{{this.name}}-{{this.qty}}</li>
-											 <li style="list-style: none">{{/items}}</li>
- 										</ul>
+										<table>
+												<tr><td>Servings</td><td>Dish</td></tr>
+											 <tr style="list-style: none">{{#items}}</tr>
+											<tr><td>this.qty</td><td>this.name</td></tr>
+											
+											 <tr style="list-style: none">{{/items}}</tr>
+ 										</table>
 									</td>
 								</tr>
 							</table>
